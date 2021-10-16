@@ -1,0 +1,27 @@
+html {
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter";
+  }
+  
+  input {
+    display: block
+  }
+  
+  h1 {
+    color: #D32000
+  }
+  
+  .form-nome {
+    margin-bottom: 15px;
+  }
+  button {
+    padding: 8px;
+    background-color: #0A95FF;
+    color: white;
+    border: 5px;
+    border-color: black;
+    border-radius: 5%;
+  }
+  
+  button:hover {
+    background-color: #2d70e3;
+  }
