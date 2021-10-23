@@ -1,5 +1,5 @@
 const pessoas = [];
-const cores = ['#000', '#FFF', '#888', '#444'];
+const cores = ['#db1414', '#2ad111', '#2e36d1', '#e6e625'];
 
 function gerarCor() {
     let pessoa = {
@@ -13,8 +13,13 @@ function gerarCor() {
     console.log(`Agora temos ${pessoas.length} pessoas na classe!!`)
     console.log(pessoas);
 
-    let p = document.createElement('p');
-    document.append(p);
+    const wrapper = document.querySelector('.pessoas');
+    const p = document.createElement('p');
+    p.innerHTML = `${pessoa.nome}`;
+    p.style.color = `${pessoa.cor}`;
+    wrapper.insertAdjacentElement('afterbegin', p);
 
+    const h1 = document.querySelector('.quantidade');
+    h1.innerHTML = `Já temos ${pessoas.length} pessoas na classe Hoje!`;
 
 }
